@@ -16,4 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: piq9117/hello-world:v1
+          image: hello-world:v1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080

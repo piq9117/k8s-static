@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-kubectl apply -f namespace.yml
+docker build -t hello-world:v1 .
+
+kind load docker-image hello-world:v1 --name static
 
 kubectl apply -f site-service.yml
 

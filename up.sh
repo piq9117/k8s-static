@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash
 kind create cluster --config cluster.yml
-
-./ingress-install.sh
 
 ./apply-components.sh
