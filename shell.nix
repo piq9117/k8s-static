@@ -5,5 +5,6 @@ pkgs.mkShell {
     kind
     k9s
     kubectl
+    terraform
   ];
 }
